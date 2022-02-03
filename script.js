@@ -1,6 +1,6 @@
 function auswerten()//wird beim drücken des Auswerte-Knopfes aktiviert
 {
-    let counter=0;
+    let AnzahlRichtigerLoesungen=0;
     let solutionsString =  holeLoesungen();//korrekte Optionen aus datenbank holen
     let solutionsStringArray = solutionsString.split(";");
 
@@ -11,11 +11,11 @@ function auswerten()//wird beim drücken des Auswerte-Knopfes aktiviert
         {
             if(isCheckedCorrect(solutionsStringArray,alleInputs[i].id))
             {
-                counter= counter+1;
+                AnzahlRichtigerLoesungen= AnzahlRichtigerLoesungen+1;
             }
         }
     }
-    if(counter>2)//überprüfen ob mindestens 3 fragen richtig sind
+    if(AnzahlRichtigerLoesungen>2)//überprüfen ob mindestens 3 fragen richtig sind
     {
         document.getElementsByClassName("ergebnis")[0].innerHTML = "<u>Bestanden!</u>";
     }
