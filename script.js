@@ -4,7 +4,7 @@ function auswerten()//wird beim drücken des Auswerte-Knopfes aktiviert
     let solutionsString =  holeLoesungen();//korrekte Optionen aus datenbank holen
     let solutionsStringArray = solutionsString.split(";");
 
-    const alleInputs = document.getElementsByTagName("input");//alle inputs liegen auf einer Collection
+    const alleInputs = document.getElementsByTagName("input");//alle Optionen liegen auf einer Collection
     for(var i=0;i<alleInputs.length;i++)    
     {
         if(alleInputs[i].checked)
