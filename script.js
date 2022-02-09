@@ -25,7 +25,7 @@ function auswerten()//wird beim drücken des Auswerte-Knopfes aktiviert
     }
 }
 
-function isCheckedCorrect(solutionsStringArray,currentID)//überprüft ob das angekreuzte Input-Element korrekt ist (also ob die ID in der imaginären Datenbank vorkommt)
+function isCheckedCorrect(solutionsStringArray,currentID)//überprüft ob die angekreuzte Option korrekt ist (also ob die ID in der imaginären Datenbank vorkommt)
 {
     for(var i=0;i<solutionsStringArray.length;i++)
     {
