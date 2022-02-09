@@ -7,9 +7,9 @@ function auswerten()//wird beim drücken des Auswerte-Knopfes aktiviert
     const alleInputs = document.getElementsByTagName("input");//alle Optionen liegen auf einer Collection
     for(var i=0;i<alleInputs.length;i++)    
     {
-        if(alleInputs[i].checked)
+        if(alleInputs[i].checked)//überprüft ob die Option ausgewählt wurde
         {
-            if(isCheckedCorrect(solutionsStringArray,alleInputs[i].id))
+            if(isCheckedCorrect(solutionsStringArray,alleInputs[i].id))//überprüft ob die Auswahl korrekt ist
             {
                 AnzahlRichtigerLoesungen= AnzahlRichtigerLoesungen+1;
             }
