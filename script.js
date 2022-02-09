@@ -9,7 +9,7 @@ function auswerten()//wird beim drücken des Auswerte-Knopfes aktiviert
     {
         if(alleInputs[i].checked)//überprüft ob die Option ausgewählt wurde
         {
-            if(isCheckedCorrect(solutionsStringArray,alleInputs[i].id))//überprüft ob die Auswahl korrekt ist
+            if(isCheckedCorrect(solutionsStringArray,alleInputs[i].id))//überprüft ob die Auswahl korrekt ist und zählt je nach dem eine Richtige Auswahl dazu
             {
                 AnzahlRichtigerLoesungen= AnzahlRichtigerLoesungen+1;
             }
